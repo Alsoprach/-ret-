@@ -72,3 +72,15 @@ void value( int num, ... ){
     __asm__("leave":::);\
     __asm__("pop %%rbx":::"rcx");\
     __asm__("jmp %0": :"r"(tmpret):"memory");
+
+// #include"./h_Fstack_1.0.h"
+// void q(int a1,int a2,int a3,int a4,int a5){
+//     printf("%d %d %d %d %d %d",a1,a2,a3,a4,a5);
+// }
+
+// int main()
+// {
+//     Function_Stack_Init
+//     Function_Scheduler(q,5,1,2,3,4,5);//第一个为要调用函数的函数名，第二个为参数个数，后面为参数
+//     Function_Stack_End
+// }
