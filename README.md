@@ -1,5 +1,5 @@
 # A-special-function-caller-that-detaches-ret-instruction-data-from-the-stack
-这里通过数据分离的方式来实现基于ret指令的控制流劫持的防御
+这里通过数据分离的方式来实现对基于ret指令的控制流劫持的防御
 
 ## 2023.2.28 更新文件 h_Fstack_1.0.h
 提交第一个版本，使用C内联汇编实现。由于其为某些事情而应急性设计和实现形式的限制而导致存在诸多缺陷。
