@@ -18,7 +18,9 @@ __int64_t tmpret;
     main_canary=main_canary_A;
 
 #define Function_Stack_End \
-    if(main_canary_A != main_canary)exit(0);
+    if(main_canary_A != main_canary)exit(0);\
+    free(csp);\
+    csp=NULL;
 
 void retget( ){
     __asm__("pop %0":"=r"(tmpebp)::"memory");
