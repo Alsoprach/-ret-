@@ -63,7 +63,7 @@ void value( int num, ... ){
 #define Function_Scheduler(function,num,...) \
     value( num , ##__VA_ARGS__ );\
     retget();\
-    tmpret+=49;\
+    tmpret+=63;\
     cpush(tmpret);\
     __asm__("push %%rbx;jmp %0"::"r"(function):"memory");
 
